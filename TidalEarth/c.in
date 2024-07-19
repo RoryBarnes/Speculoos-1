@@ -52,14 +52,5 @@ dImK2ManOrbModel   2
 dShModRef        1e5 #1e6
 dStiffness       1.71e13  #3e13
 
-saOutputOrder -Time -TMan -TUMan -TLMan -TCMB -TCore $
-    -HflowUMan -HflowMeltMan -RadPowerMan -RadPowerCore -RadPowerCrust $
-    -HflowCMB -HflowSecMan $
-    -TDotMan -TDotCore -TJumpLMan -TJumpUMan -RIC -RayleighMan -ViscUMan -ViscLMan $
-    -MeltMassFluxMan FMeltUMan $
-    -MagMom -CoreBuoyTherm -CoreBuoyCompo -CoreBuoyTotal -MagPauseRad $
-    -BLUMan -BLLMan $
-     K2 ImK2 SemiMajorAxis Eccentricity ShmodUMan MeanMotion ViscUManArr $
-     ChiOC ChiIC MassChiOC MassChiIC MassOC MassIC $
-    -RadPowerTotal SurfEnFluxEqtide -PowerEqtide TideLock TidalQ -SurfEnFluxTotal 
-
+saOutputOrder -Time -TMan -TCore $
+    -HflowUMan -HflowMeltMan -RadPowerMan -HflowSecMan -PowerEqtide
