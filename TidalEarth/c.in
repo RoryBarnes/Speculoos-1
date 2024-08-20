@@ -3,10 +3,10 @@ sName		c			# Body's name
 saModules 	radheat thermint eqtide
 
 # Physical Properties
-dMass -2.8857142857142857
+dMass -6.1
 dRadius		   -1.367  			# Radius, negative -> Earth radii
 # Orbital Properties
-dEcc 0.12857142857142856
+dEcc 0.5387755102040817
 dSemi        -0.03984 		# Semi-major axis, negative -> AU
 
 # mantle parameters that we will change
@@ -49,12 +49,12 @@ dEruptEff        0.2
 dViscJumpMan     2.0
 dTrefLind       5600
 dImK2ManOrbModel   2
-dShModRef        1e5 #1e6
-dStiffness       1.71e13  #3e13
+#dShModRef        1e5 #1e6
+#dStiffness       1.71e13  #3e13
 
 saOutputOrder -Time -TMan -TUMan -TLMan -TCMB -TCore $
     -HflowUMan -HflowMeltMan -RadPowerMan -RadPowerCore -RadPowerCrust $
-    -HflowCMB -HflowSecMan $
+    -HflowCMB -HflowSecMan -HFlowSurf $
     -TDotMan -TDotCore -TJumpLMan -TJumpUMan -RIC -RayleighMan -ViscUMan -ViscLMan $
     -MeltMassFluxMan FMeltUMan $
     -MagMom -CoreBuoyTherm -CoreBuoyCompo -CoreBuoyTotal -MagPauseRad $
