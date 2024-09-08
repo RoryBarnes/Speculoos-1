@@ -1,0 +1,14 @@
+sSrcFolder /home/jcbmgd/Documents/juliette/LP890-9/TidalEarth
+sDestFolder ParameterSweep_c_2paramV2
+sTrialName test_
+
+sBodyFile   sun.in
+
+sBodyFile   b.in
+
+sBodyFile   c.in
+
+dMass [-0.9, -6.1, n10] cmass
+dEcc [0.0, 0.6, n10] cecc
+
+sPrimaryFile   vpl.in
